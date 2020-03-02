@@ -1,25 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import Constants from 'expo-constants';
-// import { Ionicons } from '@expo/vector-icons'
+import { Ionicons } from '@expo/vector-icons'
 
-// const image = require("../icon.png");
-
-
-export default class App extends Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                {/* <Image resizeMode="cover" style={styles.logo} source={image} /> */}
-                {/* <Ionicons name="md-checkmark-circle" size={32} color="green" /> */}
-            </View>
-        );
-    }
-}
+const App = () =>
+    (
+        <View style={styles.container}>
+            <Image resizeMode="cover" style={styles.logo} source={require('../../assets/react-icon.png')} />
+            <Ionicons name="md-checkmark-circle" size={32} color="green" />
+        </View>
+    );
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: Constants.statusBarHeight,
@@ -30,3 +25,5 @@ const styles = StyleSheet.create({
         height: 200,
     }
 });
+
+export default App

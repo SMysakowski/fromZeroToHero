@@ -10,21 +10,21 @@ The most fundamental component for building a UI, View is a container that suppo
 A React component for displaying text.
 Text supports nesting, styling, and touch handling.
 
-@import "viewAndText/ViewAndText.js"  {cmd="node" line_begin=5 line_end=9}
+@import "ViewAndText.js"  {cmd="node" line_begin=5 line_end=9}
 
 
 [`<ScrollView />`](https://reactnative.dev/docs/scrollview)
 
 Component that wraps platform ScrollView while providing integration with touch locking "responder" system.
 
-@import "scrollView/ScrollView.js"  {cmd="node" line_begin=17 line_end=25}
+@import "ScrollView.js"  {cmd="node" line_begin=17 line_end=25}
 
 
 [`<FlatList />`](https://reactnative.dev/docs/flatlist) 
 
 A performant interface for rendering basic, flat lists, supporting the most handy features:
 
-@import "flatList/FlatList.js"  {cmd="node" line_begin=25 line_end=30}
+@import "FlatList.js"  {cmd="node" line_begin=25 line_end=30}
 
 
 ---
@@ -41,23 +41,23 @@ A performant interface for rendering basic, flat lists, supporting the most hand
 
 #### Basic styling:
 
-@import "styles/Styles.js" {cmd="node" line_begin=18, line_end=19}
+@import "Styles.js" {cmd="node" line_begin=18, line_end=19}
 
 
 #### StyleSheet:
 
 **usage:**
-@import "styles/Styles.js" {cmd="node" line_begin=14, line_end=15}
+@import "Styles.js" {cmd="node" line_begin=14, line_end=15}
 
 **initialization:**
-@import "styles/Styles.js" {cmd="node" line_begin=24, line_end=40}
+@import "Styles.js" {cmd="node" line_begin=24, line_end=40}
 
 #### Styled components:
 **usage:**
-@import "styles/Styles.js" {cmd="node" line_begin=19, line_end=20}
+@import "Styles.js" {cmd="node" line_begin=19, line_end=20}
 
 **initialization:**
-@import "styles/Styles.js" {cmd="node" line_begin=5, line_end=10}
+@import "Styles.js" {cmd="node" line_begin=5, line_end=10}
 
 ---
 ## TASKS:

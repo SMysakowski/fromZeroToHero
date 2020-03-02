@@ -1,14 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-import { DeviceStorageExample } from "./screens/4-input-and-storage";
-// import {} from "./screens/3-basic-components";
+import { MapViewExample } from "./screens/5-location";
 
 const App = () => {
   return (
     <View style={styles.container}>
       {/* <Text>Open up App.js to start working on your app!</Text> */}
-      <DeviceStorageExample />
+      <MapViewExample />
     </View>
   );
 };

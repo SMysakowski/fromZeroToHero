@@ -54,6 +54,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: '100%',
         justifyContent: 'space-between',
         paddingTop: Constants.statusBarHeight,
         backgroundColor: '#ecf0f1',
