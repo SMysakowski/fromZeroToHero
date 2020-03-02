@@ -1,12 +1,12 @@
-# Cześć 4 - Basic Navigation
+# 7. Basic Navigation
 
-Trzeba zainstalować react navigation :
+**Installation:**
 ```
 expo install react-navigation react-native-gesture-handler react-native-reanimated react-native-screens react-navigation-stack @react-native-community/masked-view
 ```
 
-createAppContainer
-
+**createAppContainer**
+```
 const Navigator = createStackNavigator(
     {
         Home: {
@@ -18,9 +18,10 @@ const Navigator = createStackNavigator(
         initialRouteName: 'Home',
     }
 );
+```
 
 # TASKS
-1. Add view for displaying note details
-2*. Add separate view for creating new note/editing existing one
+1. Add view for displaying city details
+2*. Add separate view for creating new city/editing existing one
 3*. Add possibility to set planned date for note
 4*. Make date selecting working properly on both iOS and Android

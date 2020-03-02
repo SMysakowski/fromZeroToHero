@@ -8,7 +8,7 @@ const App = () => {
       .fill(0)
       .map((a, i) => i)
       .map(i => ({
-        title: `Note no. ${i}`,
+        title: `City no. ${i}`,
         key: i,
         content: `Content number ${i}. It's a bit longer than title. It's even long enough to force a line break`
       }))

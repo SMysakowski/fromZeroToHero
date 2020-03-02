@@ -65,8 +65,8 @@ A performant interface for rendering basic, flat lists, supporting the most hand
 1. Create new project:
     * `expo init projectName`
     * select **blank**
-2. Display single note, for now it can be just a text.
-3. Display list of notes.
+2. Display single city, for now it can be just a text.
+3. Display list of cities.
 4. Apply styling to the list.
-5. *Add a flag indicating whether note is completed or not, display only not completed notes.
-6. *Divide notes to sections: todo, completed
+5. *Add a flag indicating whether city is visited or not, display only not visited cities.
+6. *Divide notes to sections: to visit, visited
