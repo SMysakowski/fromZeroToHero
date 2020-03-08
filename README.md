@@ -8,7 +8,7 @@
 2) SpeedDating - Introduce yourself.
 3) [Components you should know before writing your first application](screens/3-basic-components/index.md).
 4) [Deep dive into Inputs and Storage](screens/4-input-and-storage/README.md).
-5) [Bring on the traffic! How to use Google Maps](screens/5-location/README.MD).
+5) [Bring on the traffic! How to use Google Maps](screens/5-location/README.md).
 6) [Understanding screen's navigation](screens/6-basic-navigation/README.md).
 7) How to connect your app with 3rd party libraries.
 8) Expo vs [React Native CLI](https://github.com/react-native-community/cli). A guide to bootstrapping new application.
