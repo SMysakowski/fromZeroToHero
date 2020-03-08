@@ -1,5 +1,6 @@
 # 4. Input and storage
-___
+
+---
 
 #### [`<Touchable />`](https://reactnative.dev/docs/handling-touches#__docusaurus)
 
@@ -8,40 +9,120 @@ Users interact with mobile apps mainly through touch. They can use a combination
 ####usage:
 
 **Button**
-@import "ButtonsAndTouchables.js" {cmd="node" line_begin=20 line_end=21}
+
+```
+<Button title="Tomato button" color="tomato" onPress={increaseCounter} />
+```
 
 **TouchableHighlight**
-@import "ButtonsAndTouchables.js" {cmd="node" line_begin=21 line_end=24}
+
+```
+<TouchableHighlight onPress={increaseCounter}>
+    <Text>Touchable Highlight</Text>
+</TouchableHighlight>
+```
 
 **TouchableOpacity**
-@import "ButtonsAndTouchables.js" {cmd="node" line_begin=35 line_end=42}
+
+```
+<TouchableOpacity
+    onPress={increaseCounter}
+    activeOpacity={0.05}
+    style={styles.touchable}
+>
+    <Text>Touchable Opacity 2</Text>
+</TouchableOpacity>
+```
 
 **TouchableWithoutFeedback**
-@import "ButtonsAndTouchables.js" {cmd="node" line_begin=42 line_end=50}
 
-___
+```
+<TouchableWithoutFeedback
+    onPress={increaseCounter}
+    style={styles.touchable}
+>
+    <View style={{ borderWidth: 2 }}>
+        <Text>Touchable Without Feedback</Text>
+    </View>
+</TouchableWithoutFeedback>
+```
+
+---
 
 #### [`<Image />`](https://reactnative.dev/docs/images#__docusaurus)
 
-act Native provides a unified way of managing images and other media assets in your Android and iOS apps. To add a static image to your app, place it somewhere in your source code tree and reference it like this:
-___
+React Native provides a unified way of managing images and other media assets in your Android and iOS apps. To add a static image to your app, place it somewhere in your source code tree and reference it like this:
+
+```
+<Image resizeMode="cover" style={styles.logo} source={require('../../assets/react-icon.png')} />
+```
+
+---
 
 #### [`<TextInput />`](https://reactnative.dev/docs/textinput#__docusaurus)
 
-A foundational component for inputting text into the app via a keyboard. 
-___
+A foundational component for inputting text into the app via a keyboard.
+
+```
+<TextInput
+    placeholder="Enter text"
+    returnKeyType="done"
+    autoFocus={true}
+    value={this.state.value}
+    onChangeText={this.textChanged}
+    onSubmitEditing={this.submit}
+/>
+```
+
+---
+
 #### [`AsyncStorage`](https://reactnative.dev/docs/asyncstorage)
 
 An asynchronous, unencrypted, persistent, key-value storage system for React Native.
 
-##### AsyncStorage from React Native package is deprecated. 
+##### AsyncStorage from React Native package is deprecated.
+
 Use [react-native-community/react-native-async-storage](https://github.com/react-native-community/async-storage) instead.
 
+#### usage:
+
+**save:**
+
+```
+import AsyncStorage from '@react-native-community/async-storage';
+
+saveData = async (key, value) => {
+    try {
+        await AsyncStorage.setItem(key, value)
+    } catch (e) {
+        {...}
+    }
+}
+
+```
+
+**read:**
+
+```
+import AsyncStorage from '@react-native-community/async-storage';
+
+getData = async key => {
+  try {
+    const value = await AsyncStorage.getItem(key)
+    if(value !== null) {
+      {...}
+    }
+  } catch(e) {
+    {...}
+  }
+}
+```
 
 ## TASKS:
+
 1. Add simple form for adding new city
 2. Save cities to AsyncStorage
 3. Add possibility to edit and remove city
 4. Allow user to show and hide visited cities
-5. *Use icons for displaying visited city indicator and for buttons
-6. *Handle usage of AsyncStorage completely outside components
+5. \*Use icons for displaying visited city indicator and for buttons
+6. \*Handle usage of AsyncStorage completely outside components
